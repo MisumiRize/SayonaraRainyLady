@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C348D8571D02ED8500FCE2AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C348D8561D02ED8500FCE2AE /* AppDelegate.swift */; };
+		C348D8591D02ED8500FCE2AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C348D8581D02ED8500FCE2AE /* ViewController.swift */; };
+		C348D85C1D02ED8500FCE2AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C348D85A1D02ED8500FCE2AE /* Main.storyboard */; };
+		C348D85E1D02ED8500FCE2AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C348D85D1D02ED8500FCE2AE /* Assets.xcassets */; };
+		C348D8611D02ED8500FCE2AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C348D85F1D02ED8500FCE2AE /* LaunchScreen.storyboard */; };
+		C348D86C1D02ED8500FCE2AE /* SayonaraRainyLadyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C348D86B1D02ED8500FCE2AE /* SayonaraRainyLadyTests.swift */; };
+		C348D8771D02ED8500FCE2AE /* SayonaraRainyLadyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C348D8761D02ED8500FCE2AE /* SayonaraRainyLadyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C348D8681D02ED8500FCE2AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C348D84B1D02ED8500FCE2AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C348D8521D02ED8500FCE2AE;
+			remoteInfo = SayonaraRainyLady;
+		};
+		C348D8731D02ED8500FCE2AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C348D84B1D02ED8500FCE2AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C348D8521D02ED8500FCE2AE;
+			remoteInfo = SayonaraRainyLady;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C348D8531D02ED8500FCE2AE /* SayonaraRainyLady.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SayonaraRainyLady.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C348D8561D02ED8500FCE2AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C348D8581D02ED8500FCE2AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C348D85B1D02ED8500FCE2AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C348D85D1D02ED8500FCE2AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C348D8601D02ED8500FCE2AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C348D8621D02ED8500FCE2AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C348D8671D02ED8500FCE2AE /* SayonaraRainyLadyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SayonaraRainyLadyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C348D86B1D02ED8500FCE2AE /* SayonaraRainyLadyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SayonaraRainyLadyTests.swift; sourceTree = "<group>"; };
+		C348D86D1D02ED8500FCE2AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C348D8721D02ED8500FCE2AE /* SayonaraRainyLadyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SayonaraRainyLadyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C348D8761D02ED8500FCE2AE /* SayonaraRainyLadyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SayonaraRainyLadyUITests.swift; sourceTree = "<group>"; };
+		C348D8781D02ED8500FCE2AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C348D8501D02ED8500FCE2AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C348D8641D02ED8500FCE2AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C348D86F1D02ED8500FCE2AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C348D84A1D02ED8500FCE2AE = {
+			isa = PBXGroup;
+			children = (
+				C348D8551D02ED8500FCE2AE /* SayonaraRainyLady */,
+				C348D86A1D02ED8500FCE2AE /* SayonaraRainyLadyTests */,
+				C348D8751D02ED8500FCE2AE /* SayonaraRainyLadyUITests */,
+				C348D8541D02ED8500FCE2AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C348D8541D02ED8500FCE2AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C348D8531D02ED8500FCE2AE /* SayonaraRainyLady.app */,
+				C348D8671D02ED8500FCE2AE /* SayonaraRainyLadyTests.xctest */,
+				C348D8721D02ED8500FCE2AE /* SayonaraRainyLadyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C348D8551D02ED8500FCE2AE /* SayonaraRainyLady */ = {
+			isa = PBXGroup;
+			children = (
+				C348D8561D02ED8500FCE2AE /* AppDelegate.swift */,
+				C348D8581D02ED8500FCE2AE /* ViewController.swift */,
+				C348D85A1D02ED8500FCE2AE /* Main.storyboard */,
+				C348D85D1D02ED8500FCE2AE /* Assets.xcassets */,
+				C348D85F1D02ED8500FCE2AE /* LaunchScreen.storyboard */,
+				C348D8621D02ED8500FCE2AE /* Info.plist */,
+			);
+			path = SayonaraRainyLady;
+			sourceTree = "<group>";
+		};
+		C348D86A1D02ED8500FCE2AE /* SayonaraRainyLadyTests */ = {
+			isa = PBXGroup;
+			children = (
+				C348D86B1D02ED8500FCE2AE /* SayonaraRainyLadyTests.swift */,
+				C348D86D1D02ED8500FCE2AE /* Info.plist */,
+			);
+			path = SayonaraRainyLadyTests;
+			sourceTree = "<group>";
+		};
+		C348D8751D02ED8500FCE2AE /* SayonaraRainyLadyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C348D8761D02ED8500FCE2AE /* SayonaraRainyLadyUITests.swift */,
+				C348D8781D02ED8500FCE2AE /* Info.plist */,
+			);
+			path = SayonaraRainyLadyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C348D8521D02ED8500FCE2AE /* SayonaraRainyLady */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C348D87B1D02ED8500FCE2AE /* Build configuration list for PBXNativeTarget "SayonaraRainyLady" */;
+			buildPhases = (
+				C348D84F1D02ED8500FCE2AE /* Sources */,
+				C348D8501D02ED8500FCE2AE /* Frameworks */,
+				C348D8511D02ED8500FCE2AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SayonaraRainyLady;
+			productName = SayonaraRainyLady;
+			productReference = C348D8531D02ED8500FCE2AE /* SayonaraRainyLady.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C348D8661D02ED8500FCE2AE /* SayonaraRainyLadyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C348D87E1D02ED8500FCE2AE /* Build configuration list for PBXNativeTarget "SayonaraRainyLadyTests" */;
+			buildPhases = (
+				C348D8631D02ED8500FCE2AE /* Sources */,
+				C348D8641D02ED8500FCE2AE /* Frameworks */,
+				C348D8651D02ED8500FCE2AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C348D8691D02ED8500FCE2AE /* PBXTargetDependency */,
+			);
+			name = SayonaraRainyLadyTests;
+			productName = SayonaraRainyLadyTests;
+			productReference = C348D8671D02ED8500FCE2AE /* SayonaraRainyLadyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C348D8711D02ED8500FCE2AE /* SayonaraRainyLadyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C348D8811D02ED8500FCE2AE /* Build configuration list for PBXNativeTarget "SayonaraRainyLadyUITests" */;
+			buildPhases = (
+				C348D86E1D02ED8500FCE2AE /* Sources */,
+				C348D86F1D02ED8500FCE2AE /* Frameworks */,
+				C348D8701D02ED8500FCE2AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C348D8741D02ED8500FCE2AE /* PBXTargetDependency */,
+			);
+			name = SayonaraRainyLadyUITests;
+			productName = SayonaraRainyLadyUITests;
+			productReference = C348D8721D02ED8500FCE2AE /* SayonaraRainyLadyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C348D84B1D02ED8500FCE2AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Rize MISUMI";
+				TargetAttributes = {
+					C348D8521D02ED8500FCE2AE = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = ERSN786N69;
+					};
+					C348D8661D02ED8500FCE2AE = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = ERSN786N69;
+						TestTargetID = C348D8521D02ED8500FCE2AE;
+					};
+					C348D8711D02ED8500FCE2AE = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = ERSN786N69;
+						TestTargetID = C348D8521D02ED8500FCE2AE;
+					};
+				};
+			};
+			buildConfigurationList = C348D84E1D02ED8500FCE2AE /* Build configuration list for PBXProject "SayonaraRainyLady" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C348D84A1D02ED8500FCE2AE;
+			productRefGroup = C348D8541D02ED8500FCE2AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C348D8521D02ED8500FCE2AE /* SayonaraRainyLady */,
+				C348D8661D02ED8500FCE2AE /* SayonaraRainyLadyTests */,
+				C348D8711D02ED8500FCE2AE /* SayonaraRainyLadyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C348D8511D02ED8500FCE2AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C348D8611D02ED8500FCE2AE /* LaunchScreen.storyboard in Resources */,
+				C348D85E1D02ED8500FCE2AE /* Assets.xcassets in Resources */,
+				C348D85C1D02ED8500FCE2AE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C348D8651D02ED8500FCE2AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C348D8701D02ED8500FCE2AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C348D84F1D02ED8500FCE2AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C348D8591D02ED8500FCE2AE /* ViewController.swift in Sources */,
+				C348D8571D02ED8500FCE2AE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C348D8631D02ED8500FCE2AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C348D86C1D02ED8500FCE2AE /* SayonaraRainyLadyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C348D86E1D02ED8500FCE2AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C348D8771D02ED8500FCE2AE /* SayonaraRainyLadyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C348D8691D02ED8500FCE2AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C348D8521D02ED8500FCE2AE /* SayonaraRainyLady */;
+			targetProxy = C348D8681D02ED8500FCE2AE /* PBXContainerItemProxy */;
+		};
+		C348D8741D02ED8500FCE2AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C348D8521D02ED8500FCE2AE /* SayonaraRainyLady */;
+			targetProxy = C348D8731D02ED8500FCE2AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C348D85A1D02ED8500FCE2AE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C348D85B1D02ED8500FCE2AE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C348D85F1D02ED8500FCE2AE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C348D8601D02ED8500FCE2AE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C348D8791D02ED8500FCE2AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C348D87A1D02ED8500FCE2AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C348D87C1D02ED8500FCE2AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SayonaraRainyLady/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.misumirize.SayonaraRainyLady;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C348D87D1D02ED8500FCE2AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SayonaraRainyLady/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.misumirize.SayonaraRainyLady;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C348D87F1D02ED8500FCE2AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SayonaraRainyLadyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.misumirize.SayonaraRainyLadyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SayonaraRainyLady.app/SayonaraRainyLady";
+			};
+			name = Debug;
+		};
+		C348D8801D02ED8500FCE2AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SayonaraRainyLadyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.misumirize.SayonaraRainyLadyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SayonaraRainyLady.app/SayonaraRainyLady";
+			};
+			name = Release;
+		};
+		C348D8821D02ED8500FCE2AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SayonaraRainyLadyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.misumirize.SayonaraRainyLadyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SayonaraRainyLady;
+			};
+			name = Debug;
+		};
+		C348D8831D02ED8500FCE2AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SayonaraRainyLadyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.misumirize.SayonaraRainyLadyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SayonaraRainyLady;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C348D84E1D02ED8500FCE2AE /* Build configuration list for PBXProject "SayonaraRainyLady" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C348D8791D02ED8500FCE2AE /* Debug */,
+				C348D87A1D02ED8500FCE2AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C348D87B1D02ED8500FCE2AE /* Build configuration list for PBXNativeTarget "SayonaraRainyLady" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C348D87C1D02ED8500FCE2AE /* Debug */,
+				C348D87D1D02ED8500FCE2AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C348D87E1D02ED8500FCE2AE /* Build configuration list for PBXNativeTarget "SayonaraRainyLadyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C348D87F1D02ED8500FCE2AE /* Debug */,
+				C348D8801D02ED8500FCE2AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C348D8811D02ED8500FCE2AE /* Build configuration list for PBXNativeTarget "SayonaraRainyLadyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C348D8821D02ED8500FCE2AE /* Debug */,
+				C348D8831D02ED8500FCE2AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C348D84B1D02ED8500FCE2AE /* Project object */;
+}
