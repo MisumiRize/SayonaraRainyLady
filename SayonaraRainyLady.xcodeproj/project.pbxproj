@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C32D371C1D0678F700E33334 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32D371B1D0678F700E33334 /* Constants.swift */; };
 		C348D8571D02ED8500FCE2AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C348D8561D02ED8500FCE2AE /* AppDelegate.swift */; };
 		C348D8591D02ED8500FCE2AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C348D8581D02ED8500FCE2AE /* ViewController.swift */; };
 		C348D85C1D02ED8500FCE2AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C348D85A1D02ED8500FCE2AE /* Main.storyboard */; };
@@ -14,6 +15,9 @@
 		C348D8611D02ED8500FCE2AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C348D85F1D02ED8500FCE2AE /* LaunchScreen.storyboard */; };
 		C348D86C1D02ED8500FCE2AE /* SayonaraRainyLadyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C348D86B1D02ED8500FCE2AE /* SayonaraRainyLadyTests.swift */; };
 		C348D8771D02ED8500FCE2AE /* SayonaraRainyLadyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C348D8761D02ED8500FCE2AE /* SayonaraRainyLadyUITests.swift */; };
+		C365492A1D02FD6A00E6BEC5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36549291D02FD6A00E6BEC5 /* CoreLocation.framework */; };
+		C368F5BB1D02EF15006541C9 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C368F5B91D02EF15006541C9 /* Alamofire.framework */; };
+		C368F5BC1D02EF15006541C9 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C368F5BA1D02EF15006541C9 /* SwiftyJSON.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C32D371B1D0678F700E33334 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C348D8531D02ED8500FCE2AE /* SayonaraRainyLady.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SayonaraRainyLady.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C348D8561D02ED8500FCE2AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C348D8581D02ED8500FCE2AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,9 @@
 		C348D8721D02ED8500FCE2AE /* SayonaraRainyLadyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SayonaraRainyLadyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C348D8761D02ED8500FCE2AE /* SayonaraRainyLadyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SayonaraRainyLadyUITests.swift; sourceTree = "<group>"; };
 		C348D8781D02ED8500FCE2AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C36549291D02FD6A00E6BEC5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C368F5B91D02EF15006541C9 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		C368F5BA1D02EF15006541C9 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C365492A1D02FD6A00E6BEC5 /* CoreLocation.framework in Frameworks */,
+				C368F5BB1D02EF15006541C9 /* Alamofire.framework in Frameworks */,
+				C368F5BC1D02EF15006541C9 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +88,9 @@
 		C348D84A1D02ED8500FCE2AE = {
 			isa = PBXGroup;
 			children = (
+				C36549291D02FD6A00E6BEC5 /* CoreLocation.framework */,
+				C368F5B91D02EF15006541C9 /* Alamofire.framework */,
+				C368F5BA1D02EF15006541C9 /* SwiftyJSON.framework */,
 				C348D8551D02ED8500FCE2AE /* SayonaraRainyLady */,
 				C348D86A1D02ED8500FCE2AE /* SayonaraRainyLadyTests */,
 				C348D8751D02ED8500FCE2AE /* SayonaraRainyLadyUITests */,
@@ -98,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				C348D8561D02ED8500FCE2AE /* AppDelegate.swift */,
+				C32D371B1D0678F700E33334 /* Constants.swift */,
 				C348D8581D02ED8500FCE2AE /* ViewController.swift */,
 				C348D85A1D02ED8500FCE2AE /* Main.storyboard */,
 				C348D85D1D02ED8500FCE2AE /* Assets.xcassets */,
@@ -135,6 +150,7 @@
 				C348D84F1D02ED8500FCE2AE /* Sources */,
 				C348D8501D02ED8500FCE2AE /* Frameworks */,
 				C348D8511D02ED8500FCE2AE /* Resources */,
+				C368F5BD1D02EF21006541C9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -194,6 +210,11 @@
 					C348D8521D02ED8500FCE2AE = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = ERSN786N69;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					C348D8661D02ED8500FCE2AE = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -254,6 +275,24 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C368F5BD1D02EF21006541C9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C348D84F1D02ED8500FCE2AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -261,6 +300,7 @@
 			files = (
 				C348D8591D02ED8500FCE2AE /* ViewController.swift in Sources */,
 				C348D8571D02ED8500FCE2AE /* AppDelegate.swift in Sources */,
+				C32D371C1D0678F700E33334 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +444,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SayonaraRainyLady/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.misumirize.SayonaraRainyLady;
@@ -415,6 +459,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SayonaraRainyLady/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.misumirize.SayonaraRainyLady;
@@ -487,6 +535,7 @@
 				C348D87D1D02ED8500FCE2AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C348D87E1D02ED8500FCE2AE /* Build configuration list for PBXNativeTarget "SayonaraRainyLadyTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +544,7 @@
 				C348D8801D02ED8500FCE2AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C348D8811D02ED8500FCE2AE /* Build configuration list for PBXNativeTarget "SayonaraRainyLadyUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +553,7 @@
 				C348D8831D02ED8500FCE2AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
