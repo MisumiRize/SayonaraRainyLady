@@ -66,19 +66,19 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         coordinate = coord
     }
 
-    func fetchWeather(cb: (([JSON]) -> Void)?) {
+    func fetchWeather(cb: ([JSON]) -> Void) {
         guard let coord = coordinate else {
             return
         }
         
-        Alamofire.request(.GET, "http://weather.olp.yahooapis.jp/v1/place?coordinates=\(coord.longitude),\(coord.latitude)&appid\(Constants.appId)=&output=json")
+        Alamofire.request(.GET, "http://weather.olp.yahooapis.jp/v1/place?coordinates=\(coord.longitude),\(coord.latitude)&appid=\(Constants.appId)&output=json")
             .responseJSON { res in
                 guard let val = res.result.value else {
                     return
                 }
                 let obj = JSON(val)
                 if let weather = obj["Feature"][0]["Property"]["WeatherList"]["Weather"].array {
-                    cb?(weather)
+                    cb(weather)
                 }
         }
     }
