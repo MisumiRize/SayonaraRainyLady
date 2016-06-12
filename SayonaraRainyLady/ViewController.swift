@@ -11,15 +11,21 @@ import CoreLocation
 import Alamofire
 import SwiftyJSON
 
-class ViewController: UIViewController, CLLocationManagerDelegate {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate {
 
     var locationManager: CLLocationManager?
     var lastFetched: NSDate = NSDate()
     var lastNotificated: NSDate = NSDate()
+    var weather: Array<JSON> = []
+
+    @IBOutlet weak var tv: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        tv.delegate = self
+        tv.dataSource = self
 
         if CLLocationManager.locationServicesEnabled() {
             locationManager = CLLocationManager()
@@ -31,15 +37,35 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             }
             locationManager!.startUpdatingLocation()
             locationManager!.requestLocation()
-            fetchWeather(locationManager!.location?.coordinate) { weather in
-                print(weather)
-            }
+        }
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+
+        fetchWeather(locationManager?.location?.coordinate) { weather in
+            self.weather = weather
+            self.tv.reloadData()
         }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return weather.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCellWithIdentifier("id")
+        if cell == nil {
+            cell = UITableViewCell(style: .Subtitle, reuseIdentifier: "id")
+        }
+        cell!.textLabel?.text = String(weather[indexPath.row]["Rainfall"].floatValue)
+        cell!.detailTextLabel?.text = weather[indexPath.row]["Date"].stringValue
+        return cell!
     }
 
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
