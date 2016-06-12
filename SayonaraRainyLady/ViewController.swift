@@ -14,44 +14,27 @@ import SwiftyJSON
 class ViewController: UIViewController, CLLocationManagerDelegate {
 
     var locationManager: CLLocationManager?
-    weak var timer: NSTimer?
-    var coordinate: CLLocationCoordinate2D?
-    var notification: UILocalNotification?
-    var rainfall: Float = 0.0
-    
+    var lastFetched: NSDate = NSDate()
+    var lastNotificated: NSDate = NSDate()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        let notificationSettings = UIApplication.sharedApplication().currentUserNotificationSettings()
-        if notificationSettings != nil && notificationSettings! != .None {
-            notification = UILocalNotification()
-            notification?.fireDate = NSDate(timeIntervalSinceNow: 0)
-            notification?.timeZone = NSTimeZone.localTimeZone()
-            notification?.alertBody = "test"
-            notification?.alertAction = "OK"
-            notification?.soundName = UILocalNotificationDefaultSoundName
-        }
-        
+
         if CLLocationManager.locationServicesEnabled() {
             locationManager = CLLocationManager()
-            locationManager?.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
-            locationManager?.delegate = self
+            locationManager!.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager!.allowsBackgroundLocationUpdates = true
+            locationManager!.delegate = self
             if CLLocationManager.authorizationStatus() != CLAuthorizationStatus.AuthorizedAlways {
-                locationManager?.requestAlwaysAuthorization()
+                locationManager!.requestAlwaysAuthorization()
             }
-            locationManager?.startUpdatingLocation()
-            coordinate = locationManager?.location?.coordinate
-            fetchWeather { weather in
+            locationManager!.startUpdatingLocation()
+            locationManager!.requestLocation()
+            fetchWeather(locationManager!.location?.coordinate) { weather in
                 print(weather)
             }
         }
-
-        timer = NSTimer.scheduledTimerWithTimeInterval(300.0,
-                                                       target: self,
-                                                       selector: #selector(ViewController.checkWeather(_:)),
-                                                       userInfo: nil,
-                                                       repeats: true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -60,13 +43,32 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
 
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let coord = locations.last?.coordinate else {
-            return
+        print(locations.last?.coordinate)
+        if lastFetched.timeIntervalSinceNow < -10 * 60 {
+            lastFetched = NSDate()
+            fetchWeather(locations.last?.coordinate) { weather in
+                if let rainfall = weather[2]["Rainfall"].float {
+                    if rainfall > 0 && self.lastNotificated.timeIntervalSinceNow < -20 * 60 {
+                        let notificationSettings = UIApplication.sharedApplication().currentUserNotificationSettings()
+                        if notificationSettings != nil && notificationSettings! != .None {
+                            self.lastNotificated = NSDate()
+                            let notification = UILocalNotification()
+                            notification.fireDate = NSDate(timeIntervalSinceNow: 0)
+                            notification.timeZone = NSTimeZone.defaultTimeZone()
+                            notification.alertBody = "It will rain in 20 minutes."
+                            notification.alertAction = "OK"
+                            notification.soundName = UILocalNotificationDefaultSoundName
+                        }
+                    }
+                }
+            }
         }
-        coordinate = coord
     }
 
-    func fetchWeather(cb: ([JSON]) -> Void) {
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+    }
+
+    func fetchWeather(coordinate: CLLocationCoordinate2D?, cb: ([JSON]) -> Void) {
         guard let coord = coordinate else {
             return
         }
@@ -80,24 +82,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 if let weather = obj["Feature"][0]["Property"]["WeatherList"]["Weather"].array {
                     cb(weather)
                 }
-        }
-    }
-
-    @objc func checkWeather(timer: NSTimer) {
-        fetchWeather { weather in
-            for (i, w) in weather.enumerate() {
-                if i != 1 {
-                    continue
-                }
-                if let r = w["Rainfall"].float {
-                    let p = self.rainfall
-                    self.rainfall = r
-                    if p == 0.0 && self.rainfall > 0.0 && self.notification != nil {
-                        print(p)
-                        UIApplication.sharedApplication().scheduleLocalNotification(self.notification!)
-                    }
-                }
-            }
         }
     }
 }
